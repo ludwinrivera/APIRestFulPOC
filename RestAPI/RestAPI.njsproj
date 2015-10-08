@@ -5,6 +5,7 @@
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
     <Name>RestAPI</Name>
     <RootNamespace>RestAPI</RootNamespace>
+    <NameOfLastUsedPublishProfile>EciAPRestFulAPIPOC</NameOfLastUsedPublishProfile>
   </PropertyGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -32,6 +33,7 @@
   <ItemGroup>
     <Compile Include="app.js" />
     <Compile Include="data_access\DataAccessManager.js" />
+    <Compile Include="data_access\MemoryManager.js" />
     <Compile Include="data_access\SqlDBManager.js" />
     <Compile Include="handlers\recommendationHandler.js" />
     <Compile Include="handlers\searchHandler.js" />
@@ -39,6 +41,7 @@
     <Compile Include="routes\index.js" />
     <Compile Include="routes\RecommendationAPI.js" />
     <Compile Include="routes\SearchAPI.js" />
+    <None Include="EciAPRestFulAPIPOC.pubxml" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.styl" />
     <Content Include="README.md" />
