@@ -32,15 +32,15 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="app.js" />
-    <Compile Include="data_access\DataAccessManager.js" />
-    <Compile Include="data_access\MemoryManager.js" />
-    <Compile Include="data_access\SqlDBManager.js" />
+    <Compile Include="dataAccess\dataAccessManager.js" />
+    <Compile Include="dataAccess\memoryManager.js" />
+    <Compile Include="dataAccess\sqlDBManager.js" />
     <Compile Include="handlers\recommendationHandler.js" />
     <Compile Include="handlers\searchHandler.js" />
-    <Compile Include="helpers\ParserHelper.js" />
+    <Compile Include="helpers\parserHelper.js" />
     <Compile Include="routes\index.js" />
-    <Compile Include="routes\RecommendationAPI.js" />
-    <Compile Include="routes\SearchAPI.js" />
+    <Compile Include="routes\recommendationAPI.js" />
+    <Compile Include="routes\searchAPI.js" />
     <None Include="EciAPRestFulAPIPOC.pubxml" />
     <Content Include="package.json" />
     <Content Include="public\stylesheets\style.styl" />
@@ -51,7 +51,7 @@
   <ItemGroup>
     <Folder Include="bin\" />
     <Folder Include="handlers\" />
-    <Folder Include="data_access\" />
+    <Folder Include="dataAccess\" />
     <Folder Include="helpers\" />
     <Folder Include="public\" />
     <Folder Include="public\images\" />

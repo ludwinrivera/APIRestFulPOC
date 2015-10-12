@@ -1,5 +1,5 @@
-﻿var sqlManager = require('./SqlDBManager.js');
-var memoryManager = require('./MemoryManager.js');
+﻿var sqlManager = require('./sqlDBManager.js');
+var memoryManager = require('./memoryManager.js');
 
 
 var typeManager = "";
@@ -10,11 +10,11 @@ module.exports = {
     },
 
     executeQuery: function (query) {
-        if (typeManager == "mssql") {
-            return sqlManager.executeQuery(query);
-        }
-        else if (typeManager == "memory") {
+        if (typeManager == "memory") {
             return memoryManager.executeQuery(query);
+        }
+        else if (typeManager == "mssql") {
+            return sqlManager.executeQuery(query);
         }
     }
 };

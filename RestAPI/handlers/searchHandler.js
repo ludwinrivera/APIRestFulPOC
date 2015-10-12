@@ -2,7 +2,7 @@
 /*
  * Search Controller.
  */
-var dbManager = require('../data_access/DataAccessManager.js');
+var dbManager = require('../dataAccess/dataAccessManager.js');
 
 module.exports = {
     getKeyWordList: function (key) {
@@ -13,5 +13,4 @@ module.exports = {
         
         return result;
     }
-   
 };
