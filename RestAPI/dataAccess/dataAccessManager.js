@@ -14,7 +14,8 @@ module.exports = {
             return memoryManager.executeQuery(query);
         }
         else if (typeManager == "mssql") {
-            return sqlManager.executeQuery(query);
+            var result = sqlManager.executeQuery(query);
+            return result
         }
     }
 };

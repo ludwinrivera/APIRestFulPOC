@@ -20,10 +20,13 @@ module.exports = function (app) {
         res.setHeader('Content-Type', 'text-xml');
         res.send(JSON.stringify(xml(result)));
     }
-    
+
+    getKeyWordList = function (req, res) {
+        res.send(req.query.key + "<br>" + req.query.name);
+    }
     
     //Routes
     app.get('/searchapi/json/:key', getKeyWordListJson);
     app.get('/searchapi/xml/:key', getKeyWordListXml);
-    //app.get('/searchapi/', getKeyWordList);
+    app.get('/recomendationapi/', getKeyWordList);
 };
